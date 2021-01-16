@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+// Colors
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+// Neutral
+$dark-gray: hsl(0, 0%, 59%);
+
+// Typography
+$font-size-root: 1rem;
+$font-size-bg: 1.5rem;
+$font-size-md: 0.875rem;
+$font-size-sm: 0.625rem;
+$font-copy: "Kumbh Sans", sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font: $font-size-root $font-copy;
+  font-weight: 400;
+  // padding: 0 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-grayish-blue;
+  background: url(/profile-card-component-main/images/bg-pattern-top.svg),
+    url(/profile-card-component-main/images/bg-pattern-bottom.svg), $dark-cyan;
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  overflow: hidden;
+}
+
+h1,
+h1.card__title,
+h3,
+h3.list__item-ttile {
+  font-size: $font-size-bg;
+  font-weight: 700;
+  color: $dark-blue;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.card {
+  min-width: 350px;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+
+  #{&}__profile {
+    width: 96px;
+    height: 96px;
+    margin-top: -3rem;
+    border: 5px solid #fff;
+    border-radius: 50%;
+  }
+
+  #{&}__body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.6875rem;
+    border-bottom: 1px solid lighten($color: $dark-grayish-blue, $amount: 40%);
+
+    .card__title {
+      margin-bottom: 0.75rem;
+    }
+
+    .card__text {
+      font-size: $font-size-md;
+    }
+  }
+
+  #{&}__footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.6875rem;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .list__item-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .list__item-description {
+    font-size: $font-size-sm;
+  }
+}

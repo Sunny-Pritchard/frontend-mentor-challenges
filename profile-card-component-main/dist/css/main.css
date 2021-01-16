@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font: 1rem "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6a6f81;
+  background: url(/profile-card-component-main/images/bg-pattern-top.svg), url(/profile-card-component-main/images/bg-pattern-bottom.svg), #19a2ae;
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  overflow: hidden;
+}
+
+h1,
+h1.card__title,
+h3,
+h3.list__item-ttile {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.card {
+  min-width: 350px;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card .card__profile {
+  width: 96px;
+  height: 96px;
+  margin-top: -3rem;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.card .card__body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.6875rem;
+  border-bottom: 1px solid #d8d9df;
+}
+
+.card .card__body .card__title {
+  margin-bottom: 0.75rem;
+}
+
+.card .card__body .card__text {
+  font-size: 0.875rem;
+}
+
+.card .card__footer {
+  padding-top: 1.5rem;
+  padding-bottom: 1.6875rem;
+}
+
+.card .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .list__item-title {
+  margin-bottom: 0.5rem;
+}
+
+.card .list__item-description {
+  font-size: 0.625rem;
+}
