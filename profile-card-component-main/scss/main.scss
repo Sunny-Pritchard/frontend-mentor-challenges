@@ -9,7 +9,7 @@ $dark-gray: hsl(0, 0%, 59%);
 
 // Typography
 $font-size-root: 1rem;
-$font-size-bg: 1.5rem;
+$font-size-bg: 1.125rem;
 $font-size-md: 0.875rem;
 $font-size-sm: 0.625rem;
 $font-copy: "Kumbh Sans", sans-serif;
@@ -83,6 +83,11 @@ ul li {
 
     .card__title {
       margin-bottom: 0.75rem;
+
+      span {
+        font-weight: 400;
+        color: $dark-grayish-blue;
+      }
     }
 
     .card__text {

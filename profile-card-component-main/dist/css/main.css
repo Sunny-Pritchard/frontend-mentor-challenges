@@ -37,7 +37,7 @@ h1,
 h1.card__title,
 h3,
 h3.list__item-ttile {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #2d3248;
 }
@@ -76,6 +76,11 @@ ul li {
 
 .card .card__body .card__title {
   margin-bottom: 0.75rem;
+}
+
+.card .card__body .card__title span {
+  font-weight: 400;
+  color: #6a6f81;
 }
 
 .card .card__body .card__text {
