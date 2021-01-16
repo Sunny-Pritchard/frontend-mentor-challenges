@@ -3,7 +3,7 @@ const projects = [
     name: 'four-card-feature-section-master'
   },
   {
-    name: 'profile-card-component'
+    name: 'profile-card-component-main'
   }
   
 ];
